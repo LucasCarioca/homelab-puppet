@@ -3,7 +3,7 @@ class debian_base {
 		command => '/usr/bin/apt update && /usr/bin/apt upgrade -y'
 	}
 	
-	$packages = ['fish','neofetch','git','net-tools','curl']
+	$packages = ['fish','vim','neofetch','git','net-tools','curl','golang-go']
 	
 	package { $packages:
 		ensure => 'installed',
